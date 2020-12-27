@@ -9,7 +9,7 @@ const type = require('./type');
   await pgClient.connect();
 
   const kafkaClientOptions = { sessionTimeout: 100, spinDelay: 100, retries: 2 };
-  const kafkaClient = new kafka.Client(process.env.KAFKA_ZOOKEEPER_CONNECT, 'consumer-client', kafkaClientOptions);
+  const kafkaClient = new kafka.Client(process.env.KAFKA_ZOOKEEPER_CONNECT, 'work_service_runner', kafkaClientOptions);
 
   const topics = [
     { topic: 'sales-topic' }
@@ -20,7 +20,7 @@ const type = require('./type');
     fetchMaxWaitMs: 1000,
     fetchMaxBytes: 1024 * 1024,
     encoding: 'buffer',
-    groupId: 'client23'
+    groupId: 'client1'
   };
 
   const kafkaConsumer = new kafka.HighLevelConsumer(kafkaClient, topics, options);

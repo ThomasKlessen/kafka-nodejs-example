@@ -1,4 +1,5 @@
-version: "3"
+version: '3.7'
+
 services:
   zookeeper:
     image: wurstmeister/zookeeper:3.4.6
@@ -62,3 +63,22 @@ services:
       PGDATABASE: ${POSTGRES_USER}
       PGPASSWORD: ${POSTGRES_PASSWORD}
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - ./services/consumer/:/src
+  work_service:
+    build: ./services/work_service
+    container_name: work_service
+    command: sh -c "dockerize -wait tcp://zookeeper:2181 -wait tcp://kafka:9092 -wait tcp://database:5432 npm start"
+    depends_on:
+      - zookeeper
+      - kafka
+      - database
+    environment:
+      PGHOST: database
+      PGPORT: 5432
+      PGUSER: ${POSTGRES_USER}
+      PGDATABASE: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - ./services/work_service/:/src
