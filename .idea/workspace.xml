@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e10b58cd-765d-43cf-8593-e91d7e65f9f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/alphaone.SBh5cg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/alphaone.SBh5cg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/alphaone.SBh5cg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/alphaone.SBh5cg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/92ceea50-4719-4a12-b4c1-985b93e36035/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kafka-nodejs-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/work_service/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/work_service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/work_service/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/work_service/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/work_service/src/type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/work_service/src/work_service_runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/customer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/consumer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/consumer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/consumer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/consumer/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/consumer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/consumer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/consumer/src/consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/consumer/src/consumer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +29,48 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/customer" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/customer" />
       <recent name="$PROJECT_DIR$/services" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/customer" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.consumer: Compose Deployment">
+  <component name="RunManager" selected="Docker.customer/Dockerfile">
+    <configuration name="customer/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="frontend/customer/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.consumer: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
               <option value="consumer" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.customer_frontend: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="customer_frontend" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -88,6 +90,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.customer_frontend: Compose Deployment" />
+        <item itemvalue="Docker.customer/Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml.consumer: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -102,8 +106,16 @@
       <updated>1609072967592</updated>
       <workItem from="1609072968942" duration="3413000" />
       <workItem from="1609079679405" duration="753000" />
-      <workItem from="1609080710290" duration="8031000" />
+      <workItem from="1609080710290" duration="11664000" />
     </task>
+    <task id="LOCAL-00001" summary="added second consumer">
+      <created>1609106081213</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609106081213</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

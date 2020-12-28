@@ -82,3 +82,11 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
       - ./services/work_service/:/src
+  customer_frontend:
+    build: ./frontend/customer
+    container_name: customer_frontend
+    command: run serve
+    volumes:
+      - ./frontend/customer/:/usr/app
+    ports:
+    - 8081:8080
