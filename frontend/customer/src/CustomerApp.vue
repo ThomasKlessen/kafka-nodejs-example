@@ -1,7 +1,18 @@
 <template>
-  <div id="app">
-    <ServiceOverview/>
-  </div>
+  <v-app>
+    <v-app-bar
+        app
+        color="primary"
+        dark
+    >
+      <v-toolbar-title>Customer App</v-toolbar-title>
+      <v-spacer></v-spacer>
+    </v-app-bar>
+
+    <v-main>
+      <ServiceOverview/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
