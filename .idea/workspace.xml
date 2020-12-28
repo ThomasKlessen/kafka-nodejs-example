@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e10b58cd-765d-43cf-8593-e91d7e65f9f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/customer/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/customer/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/customer/src/components/ServiceOverview.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/customer/src/libs/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/customer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/customer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/customer/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/customer/src/CustomerApp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/customer/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/customer/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/customer/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/consumer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/consumer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/producer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/producer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/producer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/producer/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/producer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/producer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/producer/src/producer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/producer/src/producer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/work_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/services/work_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/work_service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/services/work_service/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +27,14 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -43,7 +64,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.customer/Dockerfile">
+  <component name="RunManager" selected="Docker.run">
     <configuration name="customer/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -78,6 +99,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.producer: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="producer" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -90,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.producer: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.customer_frontend: Compose Deployment" />
         <item itemvalue="Docker.customer/Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml.consumer: Compose Deployment" />
@@ -106,7 +141,7 @@
       <updated>1609072967592</updated>
       <workItem from="1609072968942" duration="3413000" />
       <workItem from="1609079679405" duration="753000" />
-      <workItem from="1609080710290" duration="11664000" />
+      <workItem from="1609080710290" duration="18597000" />
     </task>
     <task id="LOCAL-00001" summary="added second consumer">
       <created>1609106081213</created>
@@ -115,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609106081213</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added first frontend dev build with hot reloading">
+      <created>1609169035848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609169035848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +176,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added second consumer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added second consumer" />
+    <MESSAGE value="added first frontend dev build with hot reloading" />
+    <MESSAGE value="all backends now working with nodemon. Really ;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="all backends now working with nodemon. Really ;)" />
   </component>
 </project>

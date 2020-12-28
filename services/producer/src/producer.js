@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const Router = require('express-promise-router');
 const kafka = require('kafka-node');
+const cors = require('cors');
 const { Client: PgClient } = require('pg');
 const type = require('./type');
 
@@ -19,6 +20,8 @@ kafkaProducer.on('error', (error) => console.error('Kafka producer error:', erro
 const app = express();
 const router = new Router();
 
+app.use(cors())
+console.log('using cors')
 app.use('/', router);
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
@@ -57,9 +60,14 @@ router.post('/sales', (req, res) => {
   });
 });
 
-router.get('/sales', async (req, res) => {
+router.get('/sale2', cors(), async (req, res) => {
   const { rows } = await pgClient.query('SELECT id, uuid, total, sale_date, created_at FROM sales');
-  res.status(200).json(rows);
+  res.status(202).json(rows);
+});
+
+router.get('/sales', cors(), async (req, res) => {
+  const { rows } = await pgClient.query('SELECT id, uuid, total, sale_date, created_at FROM sales');
+  res.status(202).json(rows);
 });
 
 app.listen(process.env.PRODUCER_PORT);

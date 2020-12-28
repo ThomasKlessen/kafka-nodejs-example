@@ -48,6 +48,8 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     ports:
       - ${PRODUCER_PORT}:${PRODUCER_PORT}
+    volumes:
+      - ./services/producer/src:/src/src
   consumer:
     build: ./services/consumer
     container_name: kafka-nodejs-example-consumer
@@ -64,7 +66,7 @@ services:
       PGPASSWORD: ${POSTGRES_PASSWORD}
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
-      - ./services/consumer/:/src
+      - ./services/consumer/src:/src/src
   work_service:
     build: ./services/work_service
     container_name: work_service
@@ -81,7 +83,7 @@ services:
       PGPASSWORD: ${POSTGRES_PASSWORD}
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
-      - ./services/work_service/:/src
+      - ./services/work_service/src:/src/src
   customer_frontend:
     build: ./frontend/customer
     container_name: customer_frontend
